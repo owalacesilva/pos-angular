@@ -1,0 +1,64 @@
+@import 'src/variables'
+
+#side-navigation
+  position: absolute
+  top: $headerPrimaryHeight
+  left: 0
+  bottom: 0
+  width: $sideNavOpenedWidth
+  z-index: 1
+  background-color: $sideNavBgColor
+
+  --webkit-transition: left $sideNavOpeningAnimDuration ease-in
+  --moz-transition: left $sideNavOpeningAnimDuration ease-in
+  --o-transition: left $sideNavOpeningAnimDuration ease-in
+  transition: left $sideNavOpeningAnimDuration ease-in
+
+  --webkit-transition: width $sideNavOpeningAnimDuration ease-in
+  --moz-transition: width $sideNavOpeningAnimDuration ease-in
+  --o-transition: width $sideNavOpeningAnimDuration ease-in
+  transition: width $sideNavOpeningAnimDuration ease-in
+
+  .list-nav
+    display: block
+    position: relative
+    margin: 0px
+    padding: 0px
+    list-style: none
+
+    .list-item
+      display: block
+
+      .list-item-link
+        cursor: pointer
+        position: relative
+        padding: 0px 10px
+        display: inline-block
+        width: 100%
+        height: 40px
+        line-height: 40px
+        text-decoration: none
+        font-size: 14px
+        font-weight: 300
+        color: white
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+
+        --webkit-transition: $sideNavOpeningAnimDuration ease-in
+        --moz-transition: $sideNavOpeningAnimDuration ease-in
+        --o-transition: $sideNavOpeningAnimDuration ease-in
+        transition: $sideNavOpeningAnimDuration ease-in
+
+        &:hover
+          background-color: green
+
+
+        .list-item-icon 
+          color: white
+          padding: 0 !important
+          line-height: 1
+
+        .text
+          display: inline-block
+          line-height: 1

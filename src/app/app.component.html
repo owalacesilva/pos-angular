@@ -1,4 +1,12 @@
-<main>
-  <p>Aplication</p>
-  <router-outlet></router-outlet>
+<main class="dash-wrapper">
+  <!-- Header Component -->
+  <header-primary></header-primary>
+  <!-- Main Component -->
+  <div class="dash-content">
+    <!-- SideNavigation Component -->
+    <side-navigation></side-navigation>
+    <div class="dash-dynamic-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </main>

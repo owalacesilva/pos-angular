@@ -7,10 +7,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { HomeModule } from './modules/home/home.module';
 import { DashboardModule } from './modules/dashboard/dashboard.module';
+import { HeaderPrimaryComponent } from './components/header-primary/header-primary.component';
+import { SideNavigationComponent } from './components/side-navigation/side-navigation.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderPrimaryComponent,
+    SideNavigationComponent
   ],
   imports: [
     BrowserModule,
