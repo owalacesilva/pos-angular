@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pos-angular"
+    }
+  },
+  "defaultProject": "pos-angular",
+  "cli": {
+    "analytics": false
+  }
 }
