@@ -23,11 +23,20 @@
     display: block
     position: relative
     margin: 0px
-    padding: 0px
+    padding: 10px 0px
     list-style: none
 
     .list-item
       display: block
+      border-left: solid 5px transparent
+      --webkit-transition: $sideNavOpeningAnimDuration ease-in
+      --moz-transition: $sideNavOpeningAnimDuration ease-in
+      --o-transition: $sideNavOpeningAnimDuration ease-in
+      transition: $sideNavOpeningAnimDuration ease-in
+
+      &:hover
+        background-color: darken($sideNavBgColor, 5%)
+        border-left-color: green
 
       .list-item-link
         cursor: pointer
@@ -45,15 +54,6 @@
         overflow: hidden
         text-overflow: ellipsis
 
-        --webkit-transition: $sideNavOpeningAnimDuration ease-in
-        --moz-transition: $sideNavOpeningAnimDuration ease-in
-        --o-transition: $sideNavOpeningAnimDuration ease-in
-        transition: $sideNavOpeningAnimDuration ease-in
-
-        &:hover
-          background-color: green
-
-
         .list-item-icon 
           color: white
           padding: 0 !important
@@ -62,3 +62,4 @@
         .text
           display: inline-block
           line-height: 1
+          margin-left: 5px

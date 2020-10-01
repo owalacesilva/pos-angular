@@ -15,6 +15,9 @@
   transaction: top 0.5s ease-in
 
   .brand
+    display: flex
+    justify-content: center
+    align-items: center
     position: absolute
     top: 0
     left: 0
@@ -22,5 +25,30 @@
     width: $sideNavOpenedWidth
     background-color: transparent
 
+    a 
+      display: inline-block
+
+    img 
+      max-width: 100%
+      max-height: 50px
+
   .navigation
     padding-left: $sideNavOpenedWidth
+    background-color: transparent
+
+    .avatar-holder
+      display: inline-block
+      position: relative
+      width: 35px
+      height: 35px
+      margin: 0px 0px 0px 10px
+
+      img 
+        max-width: 100%
+        max-height: 100%
+        vertical-align: middle
+        border-radius: 50%
+    
+    .avatar-info
+      color: white
+
