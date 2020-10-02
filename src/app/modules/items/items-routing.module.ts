@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { DashboardComponent } from './dashboard.component';
+import { ItemsComponent } from './items.component';
 
 const routes: Routes = [{
-  path: '',
-  // canActivate: [AuthenticationGuard],
-  component: DashboardComponent,
+  path: 'items',
+  component: ItemsComponent,
 }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class DashboardRoutingModule { }
+export class ItemsRoutingModule { }

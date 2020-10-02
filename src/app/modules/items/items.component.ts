@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-customers',
-  templateUrl: './customers.component.html',
-  styleUrls: ['./customers.component.sass']
+  selector: 'app-items',
+  templateUrl: './items.component.html',
+  styleUrls: ['./items.component.sass']
 })
-export class CustomersComponent implements OnInit {
+export class ItemsComponent implements OnInit {
   dtOptions: DataTables.Settings = {};
 
   constructor() { }

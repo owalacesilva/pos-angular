@@ -1,0 +1,190 @@
+<div class="page-wrapper">
+  <div class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-6">
+          <form id="search-form" class="form-inline">
+            <div class="form-group">
+              <label>&nbsp;</label>
+              <input type="text" class="form-control" name="content" placeholder="Search Items" />
+            </div>
+            <div class="form-group mx-2">
+              <label for="filter-field" class="control-label">Filtro</label>
+              <select class="form-control" id="filter-field" name="filter-field">
+                <option>Todos</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>&nbsp;</label>
+              <button type="submit" class="btn btn-primary">
+                <i class="fa fa-fw fa-search" aria-hidden="true"></i>
+                <span>Search</span>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-12 col-sm-6">
+          <div class="text-right mt-4">
+            <a class="btn btn-primary">
+              <i class="fa fa-fw fa-plus" aria-hidden="true"></i>
+              <span>New Item</span>
+            </a>
+            <button type="button" class="btn btn-default ml-2">
+              <i class="fa fa-fw fa-ellipsis-h" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-content">
+    <div class="card">
+      <div class="card-header">
+        Items
+      </div>
+      <div>
+        <table datatable [dtOptions]="dtOptions" class="row-border hover">
+          <thead>
+            <tr>
+              <th>Item ID</th>
+              <th>Name</th>
+              <th>Category</th>
+              <th>Cost Price</th>
+              <th>Selling Price</th>
+              <th>Quantity</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>Bar</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>Bar</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>Bar</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>Bar</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>Bar</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>Bar</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>Bar</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>Bar</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>Bar</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>Bar</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>Bar</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>Bar</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>Bar</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>1</td>
+              <td>Foo</td>
+              <td>Bar</td>
+              <td>Bar</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
