@@ -1,19 +1,37 @@
 # Pull official base image
-FROM node:10.5.0
+FROM node:10-slim
 
 # Optionally set a maintainer name to let people know who made this image.
-MAINTAINER Walace Silva <wsilva.emp@gmail.com>
+LABEL Walace Silva <wsilva.emp@gmail.com>
+
+RUN apt-get update \
+  && apt-get install -yqq curl \
+  wget \
+  curl \
+  git \
+  ssh \
+  gcc \
+  make \
+  build-essential \
+  --fix-missing \
+  --no-install-recommends \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Set working directory, where the commands will be ran:
-WORKDIR /source
-
-# Add `/source/node_modules/.bin` to $PATH
-ENV PATH /source/node_modules/.bin:$PATH
+WORKDIR /usr/src/app
 
 # Install app dependencies
-COPY package.json /source/package.json
-COPY package-lock.json /source/package-lock.json
+COPY package*.json ./
+
 RUN npm install
 
+# Add `/usr/src/app/node_modules/.bin` to $PATH
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
+
+COPY . .
+
+EXPOSE 4200
+
 # Start app
-CMD ["npm", "start"]
+CMD ["ng", "serve", "--host", "0.0.0.0"]
